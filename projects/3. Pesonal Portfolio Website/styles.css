@@ -1,0 +1,543 @@
+:root {
+    --background: #070c20;
+    --blue: #334c6b;
+    --gray: #868b8e;
+    --white: #faf5ef;
+    --brown: #534538;
+    --text: #f3f3f3; 
+}
+
+*, ::before, ::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 10px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--background);
+    color: var(--text);
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    min-height: 100vh;
+}
+
+/* header style start */
+
+header {
+    background-color: var(--blue);
+    padding: 30px 15px;
+}
+
+.logo-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    float: left;
+    padding-top: 5px;
+}
+
+.logo-text {
+    font-size: 4rem;
+    margin-left: 20px;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.menu {
+    list-style-type: none;
+    overflow: hidden;
+}
+
+.menu-item {
+    float: left;
+    font-size: 3.2rem;
+    margin-right: 10px;
+    padding: 5px;
+}
+
+.menu-item:last-child {
+    margin-right: 0;
+}
+
+.theme-button {
+    background-color: var(--blue);
+    border: none;
+    cursor: pointer;
+}
+
+.theme-icon:hover {
+    background-color: var(--background);
+}
+
+.moon-button {
+    width: 40px;
+    height: 40px;
+    background: url("https://img.icons8.com/ios/50/crescent-moon.png");
+    background-size: 40px 40px;
+}
+
+.moon-button:hover {
+    background-color: var(--white);
+}
+
+.menu-link {
+    display: block;
+    color: var(--text);
+    text-decoration: none;
+}
+
+.menu-link:hover {
+    background-color: var(--background);
+}
+
+/* header style end */
+
+/* home page start */
+
+.home-main {
+    width: 100%;
+    min-height: 83vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.home-title {
+    font-size: 8rem;
+    margin-bottom: 20px;
+}
+
+.home-description {
+    font-size: 2.4rem;
+}
+
+/* home page end */
+
+/* projects page start */
+
+/* sidebar start */
+
+.sidebar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    overflow: auto;
+    width: 25%;
+    float: left;
+    margin-top: 110px;
+    border-right: 3px solid var(--blue);
+    z-index: 1;
+}
+
+.projects-title {
+    font-size: 3.8rem;
+    margin-bottom: 30px;
+    font-style: italic;
+    padding-left: 40px;
+    padding-top: 30px;
+}
+
+.sidebar-menu {
+    font-size: 3rem;
+    list-style-type: none;
+}
+
+.sidebar-menu-item {
+    border-top: 3px solid var(--blue);
+}
+
+.sidebar-menu-item:first-child {
+    border: none;
+}
+
+.sidebar-menu-link {
+    display: block;
+    color: var(--text);
+    text-decoration: none;
+    width: 100%;
+    padding: 20px 50px;
+}
+
+.sidebar-menu-link:hover {
+    background-color: var(--blue);
+}
+
+/* sidebar end */
+
+/* main start */
+
+.projects-main {
+    width: 75%;
+    margin-left: 25%;
+    min-height: 83vh;
+}
+
+.projects-section {
+    padding: 30px 50px;
+}
+
+.section-title {
+    font-size: 3.2rem;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.work-container {
+    border-bottom: 3px solid var(--blue);
+    font-size: 2.5rem;
+    padding: 15px 0;
+}
+
+.work-title {
+    font-size: 2.7rem;
+    font-style: italic;
+    margin-bottom: 15px;
+}
+
+.work-text {
+    margin-bottom: 10px;
+}
+
+.work-link {
+    text-decoration: none;
+}
+
+.education-container {
+    margin-top: 30px;
+    font-size: 2.5rem;
+}
+
+.education-text {
+    margin-bottom: 40px;
+}
+
+.courses-title {
+    margin-bottom: 40px;
+}
+
+.courses-list {
+    padding-left: 25px;
+}
+
+/* main end */
+
+/* projects page end */
+
+/* articals page start */
+
+.articles-main {
+    width: 100%;
+    min-height: 83vh;
+    padding: 30px 40px;
+}
+
+.articles-title {
+    font-size: 4.1rem;
+    font-style: italic;
+    margin-bottom: 30px;
+}
+
+.reviews-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 0 50px;
+}
+
+.review {
+    max-width: 380px;
+    padding: 40px 30px;
+    background-color: var(--blue);
+    border: 3px solid var(--white);
+    border-radius: 25px;
+    font-size: 2.6rem;
+}
+
+.review-text {
+    margin-bottom: 20px;
+}
+
+/* articals page end */
+
+/* contact page start */
+
+.contact-main {
+    width: 100%;
+    min-height: 85vh;
+    padding: 30px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-title {
+    font-size: 4.2rem;
+    font-style: italic;
+    margin-bottom: 30px;
+}
+
+.contact-form {
+    background-color: var(--blue);
+    padding: 20px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 2.6rem;
+}
+
+.contact-label {
+    margin-bottom: 5px;
+}
+
+.contact-input {
+    font-size: 2.3rem;
+    margin-bottom: 15px;
+    padding: 5px;
+}
+
+.contact-button {
+    background-color: #f3f3f3;
+    color: black;
+    width: 120px;
+    height: 50px;
+    margin: 0 auto;
+    margin-top: 10px;
+    font-size: 2.3rem;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.contact-button:hover {
+    box-shadow: 0px 0px 10px var(--text);
+}
+
+/* contact page end */
+
+/* footer start */
+
+footer {
+    background-color: var(--blue);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.reserved {
+    font-size: 2.8rem;
+}
+
+/* footer end */
+
+.hidden {
+    display: none;
+}
+
+/* media start */
+
+@media screen and (max-width: 768px) {
+
+    /* header start */
+
+    header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 15px;
+    }
+
+    .logo-text {
+        font-size: 3rem;
+    }
+
+    .nav {
+        margin-top: 10px;
+    }
+
+    .menu-item {
+        font-size: 1.8rem;
+        margin-right: 0;
+    }
+
+    .menu-item:last-child {
+        margin-right: 0;
+    }
+
+    /* header end */
+
+    /* home page start */
+
+    .home-title {
+        font-size: 3.6rem;
+        margin-bottom: 10px;
+    }
+
+    .home-description {
+        font-size: 1.4rem;
+    }
+
+    /* home page end */
+
+    /* projects page start */
+
+    .sidebar {
+        position: relative;
+        width: 100%;
+        float: none;
+        margin-top: 0;
+        text-align: center;
+        border-right: 0;
+    }
+
+    .projects-title {
+        padding-left: 0;
+        font-size: 3rem;
+        margin-bottom: 10px;
+        padding-top: 15px;
+    }
+
+    .sidebar-menu {
+        font-size: 2rem;
+    }
+
+    .sidebar-menu-item:last-child {
+        border: 3px solid var(--blue);
+    }
+
+    .sidebar-menu-link {
+        padding: 15px 0px;
+    }
+
+    .projects-main {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .projects-section {
+        padding: 15px 10px;
+    }
+
+    .section-title {
+        font-size: 2.2rem;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .work-container {
+        font-size: 1.6rem;
+        padding: 10px 0;
+    }
+
+    .work-title {
+        font-size: 1.8rem;
+        margin-bottom: 10px;
+    }
+
+    .education-container {
+        margin-top: 15px;
+        font-size: 1.6rem;
+    }
+
+    .education-text {
+        margin-bottom: 20px;
+    }
+
+    .courses-title {
+        margin-bottom: 15px;
+    }
+
+    .courses-list {
+        padding-left: 15px;
+    }
+
+    /* projects page end */
+
+    /* articles page start */
+
+    .articles-main {
+        padding: 20px 10px;
+    }
+
+    .articles-title {
+        font-size: 2.2rem;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    .reviews-container {
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+    .review {
+        padding: 20px 10px;
+        margin-bottom: 10px;
+        font-size: 1.6rem;
+    }
+
+    .review-text {
+        margin-bottom: 15px;
+    }
+
+    /* articles page end */
+
+    /* contact page start */
+
+    .contact-main {
+        padding: 0;
+    }
+
+    .contact-title {
+        font-size: 2.4rem;
+        margin-bottom: 15px;
+    }
+
+    .contact-form {
+        padding: 15px 15px;
+        font-size: 1.6rem;
+    }
+
+    .contact-input {
+        font-size: 1.6rem;
+        margin-bottom: 10px;
+    }
+
+    .contact-button {
+        font-size: 1.6rem;
+        width: 100px;
+        height: 50px;
+    }
+    
+    /* contact page end */
+
+    /* footer start */
+
+    .reserved {
+        font-size: 2rem;
+    }
+
+    /* footer end */    
+}
+
+/* media end */
