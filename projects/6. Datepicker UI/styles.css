@@ -1,0 +1,110 @@
+:root {
+    --background: #f1f1f1;
+    --text: #000000;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: var(--background);
+    min-height: 100vh;
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--text);
+    font-size: 2.4rem;
+}
+
+.picker-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 400px;
+    width: 300px;
+}
+
+.date-picker {
+    font-size: 2.4rem;
+    padding: 5px 10px;
+    cursor: pointer;
+    width: 85%;
+}
+
+.picker-button {
+    padding: 5px;
+    width: 15%;
+    height: 50px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.calendar-container {
+    display: flex;
+    flex-direction: column;
+    min-width: 300px;
+    border: 2px solid black;
+    background-color: #fff;
+    position: absolute;
+}
+
+.month-year-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.arrow {
+    border: 15px solid transparent;
+    border-left: 15px solid black;
+    cursor: pointer;
+    background-color: #fff;
+}
+
+.left-arrow {
+    transform: rotate(180deg);
+}
+
+.date-text-container {
+    display: flex;
+    justify-content: center;
+}
+
+.month {
+    margin-right: 10px;
+}
+
+th, td {
+    border: 1px solid black;
+}
+
+.dates-table {
+    border-collapse: collapse;
+}
+
+.week-day {
+    text-align: center;
+    border: none;
+    border-bottom: 3px solid black;
+}
+
+.date {
+    text-align: center;
+    vertical-align: center;
+    padding: 10px 0;
+}

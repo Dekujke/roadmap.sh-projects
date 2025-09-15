@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Datepicker UI project">
+    <meta name="keywords" content="Datepicker, project">
+    <meta name="author" content="Deku">
+    <link rel="stylesheet" href="styles.css">
+    <title>Datepicker UI</title>
+</head>
+<body>
+    <main class="main">
+        <div class="picker-container">
+            <input type="date" name="date-picker" id="date-picker" class="date-picker">
+            <button type="button" class="picker-button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-calendar" viewBox="0 0 16 16">
+                    <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+                </svg>
+            </button>
+        </div>
+        <div class="calendar-container">
+            <div class="month-year-container">
+                <button type="button" class="arrow left-arrow"></button>
+                <div class="date-text-container">
+                    <p class="month">December</p>
+                    <p class="year">2022</p>   
+                </div>
+                <button type="button" class="arrow right-arrow"></button>
+            </div>
+            <table class="dates-table">
+                <tr>
+                    <th class="week-day">S</th>
+                    <th class="week-day">M</th>
+                    <th class="week-day">T</th>
+                    <th class="week-day">W</th>
+                    <th class="week-day">T</th>
+                    <th class="week-day">F</th>
+                    <th class="week-day">S</th>
+                </tr>
+                <tr>
+                    <td class="date"></td>
+                    <td class="date"></td>
+                    <td class="date"></td>
+                    <td class="date"></td>
+                    <td class="date">1</td>
+                    <td class="date">2</td>
+                    <td class="date">3</td>
+                </tr>
+                <tr>
+                    <td class="date">4</td>
+                    <td class="date">5</td>
+                    <td class="date">6</td>
+                    <td class="date">7</td>
+                    <td class="date">8</td>
+                    <td class="date">9</td>
+                    <td class="date">10</td>
+                </tr>
+                <tr>
+                    <td class="date">11</td>
+                    <td class="date">12</td>
+                    <td class="date">13</td>
+                    <td class="date">14</td>
+                    <td class="date">15</td>
+                    <td class="date">16</td>
+                    <td class="date">17</td>
+                </tr>
+                <tr>
+                    <td class="date">18</td>
+                    <td class="date">19</td>
+                    <td class="date">20</td>
+                    <td class="date">21</td>
+                    <td class="date">22</td>
+                    <td class="date">23</td>
+                    <td class="date">24</td>
+                </tr>
+                <tr>
+                    <td class="date">25</td>
+                    <td class="date">26</td>
+                    <td class="date">27</td>
+                    <td class="date">28</td>
+                    <td class="date">29</td>
+                    <td class="date">30</td>
+                    <td class="date">31</td>
+                </tr>
+            </table>
+        </div>
+    </main>
+</body>
+</html>
