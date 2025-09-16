@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Accessible Form UI project">
+    <meta name="keywords" content="Accessible form, project">
+    <meta name="author" content="Deku">
+    <link rel="stylesheet" href="styles.css">
+    <title>Accessible Form UI</title>
+</head>
+<body>
+    <form action="" method="get" class="reg-form">
+        <div class="reg-container">
+            <label for="name" class="reg-label">Full Name</label>
+            <input type="text" name="name" id="name" class="reg-input">
+
+            <label for="email" class="reg-label">Email</label>
+            <input type="email" name="email" id="email" class="reg-input">
+            <p class="error">Email is already taken</p>
+
+            <div class="password-container">
+                <label for="password" class="reg-label">Enter Password</label>
+                <input type="password" name="password" id="password" class="reg-input">
+                <button type="button" class="eye-button">
+                    <svg class="eye" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24">
+                        <path d="M15 12c0 1.654-1.346 3-3 3s-3-1.346-3-3 1.346-3 3-3 3 1.346 3 3zm9-.449s-4.252 8.449-11.985 8.449c-7.18 0-12.015-8.449-12.015-8.449s4.446-7.551 12.015-7.551c7.694 0 11.985 7.551 11.985 7.551zm-7 .449c0-2.757-2.243-5-5-5s-5 2.243-5 5 2.243 5 5 5 5-2.243 5-5z"/>
+                    </svg>
+                </button>
+                <p class="error">Passwords are not the same</p>
+            </div>
+
+            <div class="password-container">
+                <label for="password-confirm" class="reg-label">Confirm Password</label>
+                <input type="password" name="password-confirm" id="password-confirm" class="reg-input">
+                <button type="button" class="eye-button">
+                    <svg class="eye" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24">
+                        <path d="M15 12c0 1.654-1.346 3-3 3s-3-1.346-3-3 1.346-3 3-3 3 1.346 3 3zm9-.449s-4.252 8.449-11.985 8.449c-7.18 0-12.015-8.449-12.015-8.449s4.446-7.551 12.015-7.551c7.694 0 11.985 7.551 11.985 7.551zm-7 .449c0-2.757-2.243-5-5-5s-5 2.243-5 5 2.243 5 5 5 5-2.243 5-5z"/>
+                    </svg>
+                </button>
+                <p class="error">Passwords are not the same</p>
+            </div>
+            
+            <button type="submit" class="reg-button">Update Profile</button>
+        </div>
+
+        <div class="complete-container">
+            <div class="progress-container">
+                <p class="progress">65%</p>
+            </div>
+            <h2 class="complete-title">Profile Completeness</h2>
+            <div class="tasks-container">
+                <p class="task done">Create Account</p>
+                <p class="task done">Update Roadmap Progress</p>
+                <p class="task done">Setup Public Profile</p>
+                <p class="task">Complete your first Project</p>
+                <p class="task">Invite your Friends</p>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
