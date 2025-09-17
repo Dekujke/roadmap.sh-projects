@@ -13,33 +13,52 @@
     <form action="" method="get" class="reg-form">
         <div class="reg-container">
             <label for="name" class="reg-label">Full Name</label>
-            <input type="text" name="name" id="name" class="reg-input">
+            <input 
+            type="text" 
+            name="name" 
+            id="name" 
+            class="reg-input" 
+            placeholder="What should we call you?"
+            aria-required="true"
+            aria-invalid="true"
+            aria-describedby="name-error"
+            required>
+            <p id="name-error" class="error" role="alert">Введите данные</p>
 
             <label for="email" class="reg-label">Email</label>
-            <input type="email" name="email" id="email" class="reg-input">
-            <p class="error">Email is already taken</p>
+            <input type="email"
+            name="email"
+            id="email"
+            class="reg-input"
+            placeholder="Enter your email"
+            aria-required="true"
+            aria-invalid="true"
+            aria-describedby="email-error"
+            required>
+            <p id="email-error" class="error">Email is already taken</p>
 
             <div class="password-container">
                 <label for="password" class="reg-label">Enter Password</label>
-                <input type="password" name="password" id="password" class="reg-input">
-                <button type="button" class="eye-button">
+                <input type="password" name="password" id="password" class="reg-input" placeholder="xxxxxxxx" min="6" aria-describedby="password-hint" required>
+                <button type="button" class="eye-button" aria-labelledby="Show password">
                     <svg class="eye" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24">
                         <path d="M15 12c0 1.654-1.346 3-3 3s-3-1.346-3-3 1.346-3 3-3 3 1.346 3 3zm9-.449s-4.252 8.449-11.985 8.449c-7.18 0-12.015-8.449-12.015-8.449s4.446-7.551 12.015-7.551c7.694 0 11.985 7.551 11.985 7.551zm-7 .449c0-2.757-2.243-5-5-5s-5 2.243-5 5 2.243 5 5 5 5-2.243 5-5z"/>
                     </svg>
                 </button>
-                <p class="error">Passwords are not the same</p>
             </div>
+            <p class="error">Passwords are not the same</p>
+            <p id="password-hint" class="password-hint">Password should be 6 characters minimum</p>
 
             <div class="password-container">
                 <label for="password-confirm" class="reg-label">Confirm Password</label>
-                <input type="password" name="password-confirm" id="password-confirm" class="reg-input">
-                <button type="button" class="eye-button">
+                <input type="password" name="password-confirm" id="password-confirm" class="reg-input" placeholder="xxxxxxxx" required>
+                <button type="button" class="eye-button" aria-labelledby="Show password">
                     <svg class="eye" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24">
                         <path d="M15 12c0 1.654-1.346 3-3 3s-3-1.346-3-3 1.346-3 3-3 3 1.346 3 3zm9-.449s-4.252 8.449-11.985 8.449c-7.18 0-12.015-8.449-12.015-8.449s4.446-7.551 12.015-7.551c7.694 0 11.985 7.551 11.985 7.551zm-7 .449c0-2.757-2.243-5-5-5s-5 2.243-5 5 2.243 5 5 5 5-2.243 5-5z"/>
                     </svg>
                 </button>
-                <p class="error">Passwords are not the same</p>
             </div>
+            <p class="error">Passwords are not the same</p>
             
             <button type="submit" class="reg-button">Update Profile</button>
         </div>
