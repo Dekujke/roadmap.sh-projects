@@ -1,7 +1,7 @@
 :root {
     --background: #f1f1f1;
     --text: #000;
-    --completeness: #777777;
+    --completeness: #dfdfdf;
     --error: #ff0000;
 }
 
@@ -57,7 +57,9 @@ body {
 }
 
 .error {
+    font-size: 1.4rem;
     color: var(--error);
+    margin: -10px 0 15px 5px;
     display: none;
 }
 
@@ -76,4 +78,89 @@ body {
     bottom: 18px;
 }
 
+.password-hint {
+    font-size: 1.8rem;
+    margin-top: -5px;
+    margin-bottom: 15px;
+}
+
+.reg-button {
+    background-color: #000;
+    color: #fff;
+    font-size: 2rem;
+    padding: 15px 5px;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.reg-button:hover {
+    box-shadow: 0px 0px 5px black;
+}
+
 /* left side end */
+
+/* right side start */
+
+.complete-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.progress-container {
+    border: 2px solid black;
+    border-radius: 50%;
+    padding: 33px 20px;
+    margin-bottom: 20px;
+}
+
+.progress {
+    font-size: 3.5rem;
+    font-weight: 600;
+}
+
+.complete-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.tasks-container {
+    background-color: var(--completeness);
+    border-radius: 20px;
+    padding: 20px 15px;
+}
+
+.task {
+    margin-bottom: 20px;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: var(--text);
+}
+
+.done {
+    color: #a8a8a8;
+    text-decoration: line-through;
+}
+
+/* right side end */
+
+/* accessibility start */
+
+.reg-input:focus {
+    outline: 3px solid black;
+}
+
+.reg-button:focus {
+    outline: 4px solid #ffa600;
+}
+
+.reg-input:invalid {
+    outline: 2px solid red;
+}
+
+.reg-input:invalid + p.error {
+    display: block;
+}
+
+/* accessibility end */
