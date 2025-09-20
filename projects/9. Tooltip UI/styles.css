@@ -77,7 +77,9 @@ body {
 
 #home-tooltip {
     left: -75px;
+    top: -80px;
     width: 210px;
+    transition: top 1.5s;
 }
 
 #home-tooltip .tooltip-arrow {
@@ -90,9 +92,20 @@ body {
     transition: opacity 1.5s;
 }
 
+#blog-tooltip {
+    width: 80px;
+    left: -40px;
+    transition: width 0.5s;
+}
+
+#blog-tooltip .tooltip-arrow {
+    left: 72px;
+}
+
 #home:hover {
     #home-tooltip {
         visibility: visible;
+        top: -55px;
     }
 }
 
@@ -100,5 +113,12 @@ body {
     #projects-tooltip {
         visibility: visible;
         opacity: 1;
+    }
+}
+
+#blog:hover {
+    #blog-tooltip {
+        visibility: visible;
+        width: 160px;
     }
 }
