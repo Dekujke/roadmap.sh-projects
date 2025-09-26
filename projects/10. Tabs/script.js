@@ -8,46 +8,33 @@ const secondTabText = document.getElementById("second-tab-text");
 const thirdTabText = document.getElementById("third-tab-text");
 const fourthTabText = document.getElementById("fourth-tab-text");
 
+const tabs = document.querySelectorAll(".menu-item")
+const tabTexts = document.querySelectorAll(".tab-text");
+
 firstTab.addEventListener("click", () => {
+    tabs.forEach((tab) => tab.classList.remove("selected"));
     firstTab.classList.add("selected");
-    secondTab.classList.remove("selected");
-    thirdTab.classList.remove("selected");
-    fourthTab.classList.remove("selected");
+    tabTexts.forEach((text) => text.style.display = "none");
     firstTabText.style.display = "block";
-    secondTabText.style.display = "none";
-    thirdTabText.style.display = "none";
-    fourthTabText.style.display = "none";
 })
 
 secondTab.addEventListener("click", () => {
+    tabs.forEach((tab) => tab.classList.remove("selected"));
     secondTab.classList.add("selected");
-    firstTab.classList.remove("selected");
-    thirdTab.classList.remove("selected");
-    fourthTab.classList.remove("selected");
+    tabTexts.forEach((text) => text.style.display = "none");
     secondTabText.style.display = "block";
-    firstTabText.style.display = "none";
-    thirdTabText.style.display = "none";
-    fourthTabText.style.display = "none";
 })
 
 thirdTab.addEventListener("click", () => {
+    tabs.forEach((tab) => tab.classList.remove("selected"));
     thirdTab.classList.add("selected");
-    firstTab.classList.remove("selected");
-    secondTab.classList.remove("selected");
-    fourthTab.classList.remove("selected");
+    tabTexts.forEach((text) => text.style.display = "none");
     thirdTabText.style.display = "block";
-    firstTabText.style.display = "none";
-    secondTabText.style.display = "none";
-    fourthTabText.style.display = "none";
 })
 
 fourthTab.addEventListener("click", () => {
+    tabs.forEach((tab) => tab.classList.remove("selected"));
     fourthTab.classList.add("selected");
-    firstTab.classList.remove("selected");
-    secondTab.classList.remove("selected");
-    thirdTab.classList.remove("selected");
-    fourthTabText.style.display = "block";
-    firstTabText.style.display = "none";
-    secondTabText.style.display = "none";
-    thirdTabText.style.display = "none";
+    tabTexts.forEach((text) => text.style.display = "none");
+    firstTabText.style.display = "block";
 })
