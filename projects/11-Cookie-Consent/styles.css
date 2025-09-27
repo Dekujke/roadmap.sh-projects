@@ -55,10 +55,15 @@ body {
 .menu-item {
     float: left;
     margin-right: 50px;
+    padding: 5px 10px;
 }
 
 .menu-item:last-of-type {
     margin-right: 0;
+}
+
+.menu-item:hover {
+    background-color: #d4d4d4;
 }
 
 .menu-link {
@@ -125,13 +130,16 @@ body {
     background-color: var(--div);
     bottom: 20px;
     right: 60px;
-    padding: 15px;
+    padding: 30px 20px;
     border-radius: 20px;
+    max-width: 300px;
+    display: none;
 }
 
 .cookie-img-container {
     width: 60px;
     height: 60px;
+    margin-bottom: 20px;
 }
 
 .cookies-close-button {
@@ -142,6 +150,24 @@ body {
     border: none;
     color: #fff;
     font-size: 1.8rem;
+    cursor: pointer;
+}
+
+.cookies-text {
+    color: var(--cookie-text);
+    font-size: 2rem;
+    margin-bottom: 30px;
+    max-width: 65%;
+}
+
+.cookies-button {
+    width: 100%;
+    background-color: #fff;
+    color: #000;
+    border: none;
+    border-radius: 15px;
+    font-size: 2.4rem;
+    padding: 15px 10px;
     cursor: pointer;
 }
 
