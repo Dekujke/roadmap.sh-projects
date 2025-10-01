@@ -10,3 +10,4 @@
 10. https://roadmap.sh/projects/simple-tabs
 11. https://roadmap.sh/projects/cookie-consent
 12. https://roadmap.sh/projects/restricted-textarea
+13. https://roadmap.sh/projects/accordion
