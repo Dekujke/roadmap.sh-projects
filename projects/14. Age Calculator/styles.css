@@ -1,0 +1,80 @@
+:root {
+    --background: #cfcfcf;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: var(--background);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.content {
+    background-color: #fff;
+    border: 2px solid black;
+    border-radius: 15px;
+    padding: 20px 35px;
+}
+
+.title {
+    font-size: 3rem;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.calculator-container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-bottom: 20px;
+    color: #000;
+}
+
+.birthday-label {
+    font-size: 1.8rem;
+    margin-bottom: 5px;
+}
+
+.birthday-input {
+    font-size: 1.8rem;
+    padding: 5px;
+}
+
+.qs-datepicker-container {
+    font-size: 1.7rem;
+}
+
+.calculate-button {
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.8rem;
+    background-color: #3f3f3f;
+    color: #ffffff;
+    padding: 10px 0;
+    cursor: pointer;
+}
+
+.result {
+    text-align: center;
+    font-size: 1.6rem;
+    display: none;
+}
+
+.age {
+    font-weight: 800;
+}
